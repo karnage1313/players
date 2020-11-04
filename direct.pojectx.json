@@ -1,0 +1,30 @@
+{
+ "name"         : "Project X",
+ "repository"   : "repository.Karnage",
+ "plugin"       : "script.module.projectx",
+ "priority"     : 210,
+ "id"           : "projectx",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://script.module.projectx?search=movie&imdb={imdb}&title={title|ws(%20)}&year={year}",
+    "steps"     : [".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://script.module.projectx?search=episode&title={clearname|ws(%20)}&season={season}&episode={episode}",
+    "steps"     : [".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}
